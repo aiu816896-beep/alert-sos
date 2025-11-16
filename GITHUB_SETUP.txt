@@ -1,0 +1,162 @@
+========================================
+GitHub Setup Guide for Emergency SOS App
+========================================
+
+STEP 1: Install Git
+-------------------
+1. Download Git from: https://git-scm.com/download/win
+2. Run the installer
+3. Use default settings
+4. Verify installation: git --version
+
+
+STEP 2: Initialize Git Repository
+----------------------------------
+Open PowerShell in the project folder and run:
+
+git init
+git add .
+git commit -m "Initial commit: Emergency SOS App"
+
+
+STEP 3: Create GitHub Repository
+---------------------------------
+1. Go to: https://github.com/new
+2. Repository name: emergency-sos-app
+3. Description: Emergency alert app with SMS, WhatsApp, and live tracking
+4. Choose: Public or Private
+5. DO NOT initialize with README (we already have one)
+6. Click "Create repository"
+
+
+STEP 4: Connect to GitHub
+--------------------------
+Replace YOUR_USERNAME with your GitHub username:
+
+git remote add origin https://github.com/YOUR_USERNAME/emergency-sos-app.git
+git branch -M main
+git push -u origin main
+
+
+STEP 5: Future Updates
+-----------------------
+After making changes:
+
+git add .
+git commit -m "Description of changes"
+git push
+
+
+========================================
+Quick Commands Reference
+========================================
+
+Check status:
+  git status
+
+View changes:
+  git diff
+
+Create new branch:
+  git checkout -b feature-name
+
+Switch branches:
+  git checkout main
+
+Pull latest changes:
+  git pull
+
+
+========================================
+What's Already Configured
+========================================
+
+✓ .gitignore - Excludes node_modules, build files, etc.
+✓ .gitattributes - Handles line endings correctly
+✓ All source code ready to commit
+
+
+========================================
+Repository Structure on GitHub
+========================================
+
+Your repo will include:
+- Complete React Native app
+- All screens and services
+- Documentation files
+- Configuration files
+- Setup scripts
+
+Files that will be ignored (not uploaded):
+- node_modules/ (too large)
+- .expo/ (generated files)
+- build/ (compiled code)
+
+
+========================================
+Recommended .gitignore is already set
+========================================
+
+The project already has a proper .gitignore file that excludes:
+- node_modules
+- Build artifacts
+- IDE files
+- OS-specific files
+- Sensitive data
+
+
+========================================
+Next Steps After Push
+========================================
+
+1. Add repository description on GitHub
+2. Add topics/tags: react-native, expo, emergency-app, sos
+3. (Optional) Enable GitHub Actions for CI/CD
+4. (Optional) Add collaborators if working in team
+5. Share repository link with others
+
+
+========================================
+Troubleshooting
+========================================
+
+"git is not recognized":
+  → Install Git first (Step 1)
+
+"Permission denied":
+  → Set up SSH keys or use Personal Access Token
+
+"Repository not found":
+  → Check repository URL and permissions
+
+"Failed to push":
+  → Make sure you created the repo on GitHub first
+
+
+========================================
+GitHub Repository URL Format
+========================================
+
+HTTPS:
+  https://github.com/USERNAME/emergency-sos-app.git
+
+SSH:
+  git@github.com:USERNAME/emergency-sos-app.git
+
+
+========================================
+Example Complete Setup
+========================================
+
+# After installing Git:
+
+cd "c:\Users\Nitesh\OneDrive\Desktop\emergency app"
+git init
+git add .
+git commit -m "Initial commit: Complete Emergency SOS App with SMS, WhatsApp, and Live Tracking features"
+git remote add origin https://github.com/YOUR_USERNAME/emergency-sos-app.git
+git branch -M main
+git push -u origin main
+
+
+Your app is now on GitHub! 🎉

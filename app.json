@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Emergency SOS",
+    "slug": "emergency-sos-app",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#ff0000"
+    },
+    "assetBundlePatterns": [
+      "**/*"
+    ],
+    "ios": {
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "This app needs your location to send to emergency contacts during SOS alerts.",
+        "NSLocationAlwaysAndWhenInUseUsageDescription": "This app needs your location to track and share during emergencies.",
+        "NSContactsUsageDescription": "This app needs access to contacts to add emergency contacts."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#ff0000"
+      },
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION",
+        "SEND_SMS",
+        "READ_CONTACTS",
+        "VIBRATE",
+        "FOREGROUND_SERVICE"
+      ],
+      "package": "com.emergencysos.app",
+      "versionCode": 1
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    }
+  }
+}

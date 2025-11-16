@@ -1,0 +1,31 @@
+# Note: Siren Audio File
+
+The app requires a siren audio file at `assets/siren.mp3` for the emergency alert sound feature.
+
+Since audio files cannot be committed as text, you have a few options:
+
+## Option 1: Download a Free Siren Sound
+Visit these websites to download free siren/alarm sounds:
+- https://freesound.org/ (search for "emergency siren" or "alarm")
+- https://www.zapsplat.com/ (free sound effects)
+- https://mixkit.co/free-sound-effects/ (free audio)
+
+## Option 2: Disable Siren Feature
+If you don't want the siren sound:
+1. Open the app
+2. Go to Settings
+3. Turn off "Play Siren Sound"
+
+## Option 3: Use a Simple Beep
+You can replace the siren with device haptic feedback only by modifying:
+`src/services/AlertService.js`
+
+The app will still work without the audio file - it will just use vibration instead.
+
+## How to Add the Audio File
+
+1. Create an `assets` folder in the project root if it doesn't exist
+2. Place your `siren.mp3` file inside the `assets` folder
+3. The path should be: `emergency app/assets/siren.mp3`
+
+That's it! The app will automatically load and play the siren when activated.

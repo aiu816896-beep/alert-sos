@@ -1,0 +1,95 @@
+╔══════════════════════════════════════════════════════════════════╗
+║                 🚨 EMERGENCY SOS APP - QUICK START 🚨             ║
+╚══════════════════════════════════════════════════════════════════╝
+
+📱 WHAT IS THIS?
+   A safety app that sends emergency alerts to your contacts with 
+   one button press. Includes SMS, WhatsApp, and live location tracking.
+
+⚡ QUICK SETUP (3 STEPS):
+
+   1️⃣ Install Node.js
+      Download from: https://nodejs.org/
+      
+   2️⃣ Run setup.bat
+      Double-click the setup.bat file in this folder
+      
+   3️⃣ Start the app
+      Open terminal and type: npm start
+      
+   4️⃣ Install Expo Go
+      Android: https://play.google.com/store/apps/details?id=host.exp.exponent
+      iOS: https://apps.apple.com/app/expo-go/id982107779
+
+🎯 HOW TO USE:
+
+   1. Open Expo Go on your phone
+   2. Scan the QR code from your computer
+   3. Complete the setup wizard
+   4. Add emergency contacts
+   5. Press & hold the RED button in emergencies
+
+🔐 PERMISSIONS NEEDED:
+   ✓ Location (Required) - Share your location
+   ✓ SMS (Optional) - Send emergency SMS
+   ✓ Internet (Optional) - WhatsApp & live tracking
+
+📋 FEATURES:
+   • 🔴 Red SOS button (press & hold 2.5s)
+   • 📍 GPS location sharing
+   • 📱 SMS alerts to all contacts
+   • 💬 WhatsApp integration
+   • 🔊 Optional emergency siren
+   • 📡 Live location tracking
+   • 👥 Contact management
+
+⚙️ CONFIGURATION:
+   - Add siren.mp3 to assets/ folder for alarm sound
+   - Configure Firebase in src/services/FirebaseService.js for live tracking
+   - Update settings in the app to enable/disable features
+
+📖 DOCUMENTATION:
+   - README.md → Full project documentation
+   - INSTALLATION.md → Detailed setup instructions
+   - PROJECT_SUMMARY.md → Complete feature list
+   - SIREN_AUDIO_NOTE.txt → Audio setup guide
+
+🆘 NEED HELP?
+   1. Check INSTALLATION.md for troubleshooting
+   2. Make sure Node.js is installed: node --version
+   3. Ensure you're on the same WiFi as your phone
+   4. Check that location services are enabled
+
+⚠️ IMPORTANT SAFETY NOTES:
+   • Use only in real emergencies
+   • Test with your own number first
+   • Keep emergency contacts updated
+   • Ensure location services are enabled
+   • Keep the app accessible on your phone
+
+🚀 COMMANDS:
+   npm install    → Install dependencies
+   npm start      → Start development server
+   npm run android → Run on Android emulator
+   npm run ios     → Run on iOS simulator
+
+📁 PROJECT STRUCTURE:
+   src/screens/     → App screens (Welcome, Home, etc.)
+   src/services/    → Core functionality modules
+   assets/          → Images, sounds, etc.
+   App.js           → Main app component
+
+💡 TIPS:
+   • The SOS button requires 2.5 second press to prevent accidental activation
+   • You can customize which alerts to send in Settings
+   • Live tracking requires Firebase setup (optional)
+   • Siren sound requires audio file (optional)
+   • All data is stored locally on your device
+
+🎉 YOU'RE READY!
+   Your emergency safety app is complete and ready to use.
+   Stay safe! 🛡️
+
+══════════════════════════════════════════════════════════════════
+Created with React Native + Expo | Cross-platform iOS & Android
+══════════════════════════════════════════════════════════════════
